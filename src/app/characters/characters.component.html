@@ -1,0 +1,9 @@
+<p>characters works!</p>
+<button (click)="get_characters()">GET /characters</button>
+<ul>
+    <li *ngFor="let characters of characters">
+        <a [routerLink]="['/characters',characterid]">
+            <p>name: {{characters.name}}</p>
+        </a>
+    </li>
+</ul>
